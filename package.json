@@ -9,6 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@chakra-ui/next-js": "^2.1.4",
+    "@chakra-ui/react": "^2.7.1",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
     "@types/node": "20.2.5",
     "@types/react": "18.2.9",
     "@types/react-dom": "18.2.4",
@@ -16,6 +20,7 @@
     "dexie-react-hooks": "^1.1.6",
     "eslint": "8.42.0",
     "eslint-config-next": "13.4.4",
+    "framer-motion": "^10.12.18",
     "next": "13.4.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",

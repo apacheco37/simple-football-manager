@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useLiveQuery } from "dexie-react-hooks";
 import styles from "./page.module.css";
 import { db } from "./db";
+import { Button, Input, ListItem, UnorderedList } from "@chakra-ui/react";
 
 export default function Home() {
   const [name, setName] = useState("");
@@ -25,17 +26,17 @@ export default function Home() {
 
   return (
     <main className={styles.main}>
-      <button onClick={addPlayer}>Add player</button>
-      <input
+      <Button onClick={addPlayer}>Add player</Button>
+      <Input
         type="text"
         value={name}
         onChange={(ev) => setName(ev.target.value)}
       />
-      <ul>
+      <UnorderedList>
         {friends?.map((friend) => (
-          <li key={friend.id}>{friend.name}</li>
+          <ListItem key={friend.id}>{friend.name}</ListItem>
         ))}
-      </ul>
+      </UnorderedList>
     </main>
   );
 }
